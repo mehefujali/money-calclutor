@@ -10,7 +10,7 @@ document.getElementById('calculate-btn').addEventListener('click', function (eve
       const resultDisplay = document.getElementById('results')
       resultDisplay.classList.remove('hidden')
       const toalExpenses = document.getElementById('total-expenses')
-      toalExpenses.innerText = parseFloat(toalExpenses.innerText) totalCost
+      toalExpenses.innerText = parseFloat(toalExpenses.innerText) + totalCost
       const balance = parseFloat(document.getElementById('balance').innerText) + newBalance
       document.getElementById('balance').innerText = balance
       return (balance)
